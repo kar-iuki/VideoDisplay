@@ -4,14 +4,11 @@ const status = document.getElementById("status");
 
 function toggleVideo() {
   if (video.style.display === "none") {
-    // Hidden → show and play
     video.style.display = "block";
     video.play();
   } else if (video.paused) {
-    // Visible + paused → play
     video.play();
   } else {
-    // Playing → hide and pause
     video.pause();
     video.style.display = "none";
   }
